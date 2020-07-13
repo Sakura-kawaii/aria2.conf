@@ -1,15 +1,4 @@
 #!/usr/bin/env bash
-#
-# Copyright (c) 2018-2020 P3TERX <https://p3terx.com>
-#
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
-# https://github.com/P3TERX/aria2.conf
-# File name：upload.sh
-# Description: Use Rclone to upload files after Aria2 download is complete
-# Version: 3.0
-#
 
 CHECK_CORE_FILE() {
     CORE_FILE="$(dirname $0)/core"
@@ -24,9 +13,9 @@ CHECK_CORE_FILE() {
 CHECK_RCLONE() {
     [[ $# -eq 0 ]] && {
         echo && echo -e "Checking RCLONE connection ..."
-        rclone mkdir "${DRIVE_NAME}:${DRIVE_DIR}/P3TERX.COM"
+        rclone mkdir "${DRIVE_NAME}:${DRIVE_DIR}"
         if [[ $? -eq 0 ]]; then
-            rclone rmdir "${DRIVE_NAME}:${DRIVE_DIR}/P3TERX.COM"
+            rclone rmdir "${DRIVE_NAME}:${DRIVE_DIR}"
             echo
             echo -e "${LIGHT_GREEN_FONT_PREFIX}success${FONT_COLOR_SUFFIX}"
             exit 0

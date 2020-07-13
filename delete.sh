@@ -1,15 +1,5 @@
 #!/usr/bin/env bash
-#
-# Copyright (c) 2018-2020 P3TERX <https://p3terx.com>
-#
-# This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
-# https://github.com/P3TERX/aria2.conf
-# File name：delete.sh
-# Description: Delete files after Aria2 download error or task removed
-# Version: 3.0
-#
+
 
 CHECK_CORE_FILE() {
     CORE_FILE="$(dirname $0)/core"
