@@ -1,3 +1,9 @@
+#
+# Script 核心文件
+#
+# Copyright (c) Zealer Chen
+#
+
 TASK_GID=$1
 FILE_NUM=$2
 FILE_PATH=$3

@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#
+# Script 核心文件
+#
+# Copyright (c) Zealer Chen
+#
 
 RED_FONT_PREFIX="\033[31m"
 GREEN_FONT_PREFIX="\033[32m"

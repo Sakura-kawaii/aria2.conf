@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-
+#
+# Script 核心文件
+#
+# Copyright (c) Zealer Chen
+#
 
 CHECK_CORE_FILE() {
     CORE_FILE="$(dirname $0)/core"
